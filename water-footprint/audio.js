@@ -1,0 +1,1 @@
+document.getElementById('background-audio').volume = 0.4;

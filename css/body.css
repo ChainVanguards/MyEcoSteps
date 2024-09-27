@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #2a4d29;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #ccc;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    animation: fadeInUp 1s ease;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.col {
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    animation: slideInLeft 1s ease;
+}
+
+.board {
+    position: relative;
+    padding-bottom: 100%;
+    background-color: #3b5d3b;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    background-size: cover;
+    border-radius: 5rem;
+}
+
+.boardWater {
+    background-image: url('./images/water.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boardCarbon {
+    background-image: url('./images/carbon.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boardEcological {
+    background-image: url('./images/ecological.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boardNitrogen {
+    background-image: url('./images/nitrogen.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.board-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.board-title {
+    margin-top: 20rem;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0.4rem;
+    visibility: visible;
+}
+
+.board-link {
+    margin-top: auto;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+}
+
+.board-link:hover {
+    color: #ccc;
+}
+
+.footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #1e3520;
+    color: #fff;
+    text-align: center;
+    animation: fadeInUp 1s ease;
+}
+
+.footer p {
+    margin: 0;
+    padding: 10px;
+}
+
+.col img {
+    width: 240px;
+}
+
+#info {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    animation: fadeInUp 1s ease;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .board-link {
+        font-size: 0.8rem;
+        padding: 2px 4px;
+    }
+
+    .col img {
+        width: 180px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    main {
+        flex: 1;
+    }
+
+    footer {
+        margin-top: auto;
+    }
+
+    .boardCarbon,
+    .boardWater,
+    .boardEcological,
+    .boardNitrogen {
+        background-size: 100% auto;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .board-title {
+        margin-top: 5rem;
+        font-size: 10px;
+    }
+
+    #info {
+        margin-top: 2rem;
+    }
+
+    footer {
+        font-size: 15px;
+    }
+}

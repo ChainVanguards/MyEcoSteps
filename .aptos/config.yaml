@@ -1,0 +1,8 @@
+---
+profiles:
+  default:
+    network: Mainnet
+    private_key: "0xf2967c3efd9fef4f92970fe96e1112de1e7fd21934278e072350a10b490e3667"
+    public_key: "0x01665d9aa82468de19e1e16e2873126f606c1db558765f0bed6d7a5a8c4a7deb"
+    account: 04191f9658d97a59a0b708b6cfa94b2a1aea2aca272aaa9d1ed421120094cd68
+    rest_url: "https://fullnode.mainnet.aptoslabs.com"

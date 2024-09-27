@@ -1,0 +1,323 @@
+body {
+    background-color: #333;
+    background-image: url("./bg.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.left-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+}
+
+.right-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nft-marketplace {
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.question {
+    border-radius: 24px;
+    background-color: #000000bb;
+    margin-bottom: 10px;
+    padding: 14px;
+}
+
+.choices {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.choice {
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.choice:hover {
+    background-color: white;
+    color: #0077be;
+}
+
+.points {
+    margin-top: 20px;
+}
+
+.logo-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logo-container img {
+    width: 200px;
+    height: auto;
+}
+
+a {
+    position: absolute;
+    bottom: 30px;
+    background: white;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: ui-sans-serif;
+}
+
+.support {
+    right: 40px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#statusMessage {
+    margin-top: 20px;
+    font-size: 20px;
+    color: green;
+}
+
+#networkInfo {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.market-image {
+    width: 10%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .main-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .right-container,
+    .left-container {
+        flex: none;
+        width: 100%;
+        height: 50%;
+    }
+
+    .left-container {
+        margin-top: 4rem;
+    }
+
+    .nft-marketplace {
+        width: 90%;
+        height: 60%;
+    }
+
+    .choices {
+        flex-direction: column;
+    }
+
+    .question {
+        margin: 15px;
+        font-size: 18px;
+        padding: 6px;
+    }
+
+    .choice {
+        margin: 5px auto;
+    }
+
+    .points {
+        font-size: 18px;
+    }
+}
+
+.right-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    overflow-y: auto;
+}
+
+.connect-wallet-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.connect-wallet-btn:hover {
+    background-color: #0056b3;
+}
+
+.images-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.market-image {
+    width: 45%;
+    height: auto;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+.survey-form {
+    width: 100%;
+}
+
+.survey-form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+textarea.form-control {
+    resize: none;
+}
+
+.bottom-buttons {
+    margin-top: 20px;
+}
+
+.sent {
+    margin-bottom: 10px;
+}
+
+.sent label {
+    font-size: 14px;
+}
+
+.btn-success {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-success:hover {
+    background-color: darkgreen;
+}
+
+@media (max-width: 767px) {
+    .nav-item {
+        width: 100%;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    iframe {
+        position: static;
+        z-index: 1;
+    }
+
+    .right-container,
+    .left-container {
+        flex: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .connect-wallet-btn {
+        width: 90%;
+        margin: 0 auto 20px auto;
+    }
+
+    .market-image {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .market-image {
+        width: 30%;
+        margin: 0 5px;
+    }
+}
